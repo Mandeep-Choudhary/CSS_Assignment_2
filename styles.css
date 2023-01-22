@@ -1,0 +1,48 @@
+.container{
+    margin:30px 0 200px 30px;
+    border:0px;
+
+}
+div{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+div > span{
+    background-color: skyblue;
+}
+
+div + p{
+    background-color: Yellow;
+}
+
+div ~ b{
+    background-color: lightgreen;
+}
+
+.btn{
+    margin: 20px;
+    padding:20px;
+    background-color: red;
+    color:white;
+    font-size: medium;
+    transition:padding 2s,background-color 2s,font-size 2s;
+    border-radius: 10px;
+}
+.btn:hover{
+    padding: 40px;
+    font-size:x-large;
+    background-color: blue;
+}
+.transformdiv{
+    margin: 20px;
+    padding:20px;
+    background-color: red;
+    width:100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.transformdiv:hover{
+    transform: translate(100px, 100px) scale(1.5,1.5) rotate(20deg);
+}

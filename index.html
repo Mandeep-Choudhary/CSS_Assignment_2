@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>CSS Assignment 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>CSS Units</h1>
+        <br><br>
+        <h2>em</h2>
+        <h3>In em font size of the parent is taken as base to derive new font size.</h3>
+        <div  style="font-size:14px;">
+            <p >Text with size 14px</p>
+            <div style="font-size:2em;">
+                <p >Text with size 2em=28px</p>
+                <div style="font-size:2em;">
+                    <p >Text with size 2em=56px</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <h2>rem</h2>
+        <h3>In rem standard font size i.e., 16px is used to derive new font size.It is independent of parent font size</h3>
+        <div style="font-size:14px;">
+            <p >Text with size 14px</p>
+            <div style="font-size:2rem;">
+                <p >Text with size 2rem=32px</p>
+                <div style="font-size:2rem;">
+                    <p >Text with size 2rem=32px</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <h2>vw</h2>
+        <h3>1vw is equal to 1% of viewport width</h3>
+        <h1 style="font-size:5vw;">5vw font</h1>
+
+
+        <br><br><br><br>
+        <h2>vh</h2>
+        <h3>1vh is equal to 1% of viewport height</h3>
+        <h1 style="font-size:5vh;">5vh font</h1>
+
+
+        <br><br><br><br>
+        <h1>CSS Combinators</h1>
+        <h2>Child Selector ></h2>
+        <h3>It targets child inside the specified parent e.g 'div > p' will apply to all p child inside parent div</h3>
+        <div>
+            <span>Span inside div targeted using 'div > span' and background color set to skyblue</span>
+        </div>
+
+
+        <br><br><br><br>
+        <h2>Adjacent Sibling selector +</h2>
+        <h3>It targets immediate sibling after specified tag.e.g 'div + p' will apply to immediate sibling p after div.</h3>
+        <div>
+            Div 
+        </div>
+        <p>Immediate p after div.Background color set to yellow using div + p</p>
+        <p>Not immediate p after div.No effect on background color</p>
+
+        <br><br><br><br>
+        <h2>General Sibling Selector ~</h2>
+        <h3>It targets all sibling after specified tag.e.g 'div ~ p' will apply to all sibling p after div.</h3>
+        <div>
+            Div 
+        </div><br><br>
+        <b>A b tag after div.Background color set to light green using div ~ b</b><br><br>
+        <b>Anothet b tag after div</b>
+
+        <br><br><br><br>
+        <h1>CSS Transition</h1>
+        <h3>Hover over the button to see transition effect</h3>
+        <button class="btn">Hover over me</button>
+
+        <br><br><br><br>
+        <h1>CSS Transform</h1>
+        <h3>Hover over the div to see transform effect</h3>
+        <div class="transformdiv"></div>
+        
+</body>
+</html>
